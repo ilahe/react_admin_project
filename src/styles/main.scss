@@ -1,0 +1,242 @@
+.p-0 {
+  padding: 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3em;
+}
+
+.mr-1 {
+  margin-right: 1em;
+}
+
+.ml-1 {
+  margin-left: 1em;
+}
+
+
+.w-100 {
+  width: 100%;
+}
+
+.red_color {
+  color: red;
+}
+
+@mixin dFlex($alignItems, $justifyContent) {
+  display: inline-flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+.ant-checkbox-group-item {
+  margin-right: 24px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.85);
+  background: #fafafa;
+  border: 1px solid #f1f1f1;
+  padding: 2px 18px 2px 10px;
+}
+
+.sideIcons {
+  margin-right: 7px;
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  text-align: center;
+  padding: 2px;
+  img {
+    height: 27px;
+    width: auto;
+    object-fit: cover;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.layout-content {
+  margin: 0 16px;
+}
+
+.site-layout-background {
+  padding: 24px;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+  &.main-layout {
+    min-height: 100%;
+  }
+}
+
+.main-header {
+  width: 100%;
+  @include dFlex(center, flex-end);
+}
+
+.filter_container {
+  border: 1px solid #f0f0f0;
+  padding: 15px 15px 0;
+}
+
+.create_container {
+  width: 100%;
+  @include dFlex(center, flex-end);
+}
+
+.ck-editor__editable {
+  min-height: 100px !important;
+}
+
+.frame {
+  border: 1px dashed #d9d9d9;
+  padding: 24px 12px 0;
+  position: relative;
+  margin-bottom: 24px;
+  .multipleOperations {
+    position: absolute;
+    right: 13px;
+    top: -10px;
+    width: 50px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    button {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      margin: 0 3px;
+      @include dFlex(center, center);
+      span {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.newTagContainer {
+  cursor: pointer;
+  @include dFlex(center, center);
+  .anticon {
+    svg {
+      width: 9px;
+    }
+  }
+}
+
+.ant-tag {
+  margin-bottom: 5px;
+  .anticon-close {
+    color: #096dd9;
+    svg {
+      width: 7px;
+    }
+  }
+}
+
+.breadcrumb_container {
+  margin: 16px 0;
+  width: 100%;
+  @include dFlex(center, flex-end);
+}
+
+.dFlexPassword {
+  @include dFlex(center, space-between);
+  width: 100%;
+  button {
+    width: 150px;
+  }
+  input {
+    width: calc(100% - 180px);
+  }
+}
+
+.avatarFlex {
+  @include dFlex(center, flex-start);
+  width: 100%;
+  .ant-avatar {
+    margin-right: 10px;
+    border: 1px solid #f0f0f0;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+ .login-form-forgot {
+  float: right;
+}
+ .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+ .login-form-button {
+  width: 100%;
+}
+
+ .row_main {
+   padding: 8px 0;
+ }
+
+ .dFlexType1 {
+   @include dFlex(flex-end, flex-start);
+   width: 100%;
+ }
+
+.dFlexType2 {
+  @include dFlex(center, flex-start);
+  width: 100%;
+}
+
+.horoscopeContainer {
+  .horoscopeTitle {
+    margin-bottom: 0;
+    margin-left: 0.5em;
+    font-size: 1em;
+  }
+  .total {
+    font-size: 1.5em;
+  }
+
+  .redirectHoroscope {
+    .anticon {
+      margin-right: 0.4em;
+    }
+  }
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.layout-transparent {
+  background: #f0f2f5 !important;
+}
+
+.sidebar_menu {
+  li {
+    padding-left: 10px !important;
+  }
+}
